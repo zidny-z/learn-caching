@@ -41,6 +41,16 @@ class EmployeeTable extends Component
         return view('livewire.employee-table', ['employees' => $employees]);
     }
 
+    // no cache
+    // public function render()
+    // {
+    //     $employees = Employee::where('name', 'like', "%{$this->search}%")
+    //         ->orWhere('email', 'like', "%{$this->search}%")
+    //         ->paginate($this->perPage);
+
+    //     return view('livewire.employee-table', ['employees' => $employees]);
+    // }
+
     public function refreshData()
     {
         $this->clearCache();
