@@ -2,6 +2,12 @@
     <input type="text" wire:model="search" placeholder="Cari Nama atau Email..."
         class="border p-2 rounded-md mb-3 w-full" />
 
+    <div class="flex justify-between mb-3">
+        <button wire:click="refreshData" class="bg-red-500 text-white px-4 py-2 rounded-lg">
+            Refresh Data
+        </button>
+    </div>
+
     <table class="w-full border-collapse border border-gray-300">
         <thead>
             <tr class="bg-gray-200">
